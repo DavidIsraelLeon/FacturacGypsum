@@ -11,11 +11,67 @@
     <title></title>
 </head>
 <body>
-    <div>
-        <p>
-            Productos
-        </p>
+    <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            MENU
+        </a>
 
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Crear</a>
+            <a class="dropdown-item" href="@Url.Action("ListarProducto","Home")">Listar Productos</a>
+
+
+        </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" method="post">
+                        <fieldset>
+                            <legend class="text-center header">Crear Producto</legend>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <label for="inputState" class="form-label">Seleccionar Categoria</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Categorias</option>
+                                    <option>Categoria 1</option>
+                                    <option>Categoria 2</option>
+                                    <option>Categoria 3</option>
+                                    <option>Categoria 4</option>
+
+                                    <option>Categoria 5</option>
+                                </select>
+
+                            </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="nombre" name="nombre" type="text" placeholder="Nombre Producto" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="precio" name="precio" type="text" placeholder="Precio Unitario" class="form-control">
+                                </div>
+                            </div>
+                          
+                                    <div class="form-group">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Crear Producto</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
 </body>
 </html>
