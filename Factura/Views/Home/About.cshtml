@@ -3,6 +3,7 @@
 }
 
 
+
 <div class="main-content" id="panel">
 
     <div class="header bg-gradient-primary py-2 py-lg-7">
@@ -117,7 +118,7 @@
                             <div class="table-responsive">
 
                                 <table id="listaProductos" value="#{generarFacturaControler.productosEscoger}" var="p"
-                                             styleClass="table align-items-center table-dark table-flush" headerClass="thead-light" rowClasses="filaPar, filaImpar">
+                                       styleClass="table align-items-center table-dark table-flush" headerClass="thead-light" rowClasses="filaPar, filaImpar">
 
                                     <tr>
                                         <f:facet name="header" id="pronombre">Categoria</f:facet>#{p.categoria.nombre}

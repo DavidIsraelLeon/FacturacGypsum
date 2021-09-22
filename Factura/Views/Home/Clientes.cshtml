@@ -12,19 +12,7 @@
     <title></title>
 </head>
 <body>
-    <div class="dropdown show">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            MENU
-        </a>
-
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Crear</a>
-            <a class="dropdown-item" href="@Url.Action("EditarCliente","Home")">Editar</a>
-            <a class="dropdown-item" href="#">Listar</a>
-            <a class="dropdown-item" href="@Url.Action("EliminarCliente","Home")">Eliminar</a>
-
-        </div>
-    </div>
+   
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -74,7 +62,17 @@
                             </div>
 
 
+                            <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                                <button type="submit" class="btn btn-danger" value="CANCELAR" ></button>
+                            </div>
+
+
+
                             <div class="form-group">
+
+                                <div class="col-md-10 text-center">
+                                    <button type="submit" class="btn btn-danger" value="CANCELAR"></button>
+                                </div>
                                 <div class="col-md-12 text-center">
                                     <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                                 </div>
