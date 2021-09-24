@@ -3,154 +3,232 @@
     ViewBag.Title = "Factura";
 }
 
-</pre>
+<!--
+<link rel="stylesheet" href="~/css/factura.css" />-->
+
 <div class="col-xs-6">
-    <h1><a href=" "><img alt="" src="logo.png" /> Logo aquí </a></h1>
+    <h1><img alt="" width="250" height="250" src="~/css/logo.jpeg" /> </h1>
 </div>
 <div class="col-xs-6 text-right">
     <h1>FACTURA</h1>
     <h1><small>Factura #001</small></h1>
 </div>
-
-<hr />
-
-</pre>
-<div class="row">
-    <div class="col-xs-5">
-        <div class="well well-sm">
-            <form class="form-horizontal" method="post">
-                <div class="form-group">
-                    <div class="col-md-1 text-center">
-                        <button type="submit" class="btn btn-primary btn-lg">Buscar Cliente</button>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <span class="col-md-2 col-md-offset-3 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                    <div class="col-md-8">
-                        <input id="person" name="person" type="text" placeholder="Cedula" class="form-control">
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <input id="person" name="person" type="text" placeholder="nombre" class="form-control" disabled>
-            </div>
-
-
-            <div class="panel-body">
-                Dirección
-                detalles
-                más detalles
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-5 col-xs-offset-2 text-right">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <label id="person" name="person" type="text" placeholder="nombre" class="form-control" disabled></label>
-
-            </div>
-            <div class="panel-body">
-                Dirección
-                detalles
-                más detalles
-            </div>
-        </div>
-    </div>
-</div>
-<pre><!-- / fin de sección de datos del Cliente  -->
-
-</pre>
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>
-                <h4>Servicio</h4>
-            </th>
-            <th>
-                <h4>Descripción</h4>
-            </th>
-            <th>
-                <h4>Hrs / Cantidad</h4>
-            </th>
-            <th>
-                <h4>Tarifa / Precio</h4>
-            </th>
-            <th>
-                <h4>Sub-Total</h4>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Artículo</td>
-            <td><a href="#"> Producto1</a></td>
-            <td class=" text-right ">-</td>
-            <td class=" text-right ">000</td>
-            <td class=" text-right ">000</td>
-        </tr>
-        <tr>
-            <td>Plantilla de diseño</td>
-            <td><a href="#"> Producto2 </a></td>
-            <td class="text-right">000</td>
-            <td class="text-right ">000</td>
-            <td class="text-right ">000</td>
-        </tr>
-        <tr>
-            <td>Desarrollo</td>
-            <td><a href="#"> Pproducto 3 </a></td>
-            <td class="text-right ">5</td>
-            <td class="text-right">000</td>
-            <td class="text-right">000</td>
-        </tr>
-    </tbody>
-</table>
+<div id="app" class="col-11">
+    <hr />
 <pre>
 </pre>
-<div class="row text-right">
-    <div class="col-xs-3 col-xs-offset-7">
-        <strong>
-            Sub Total:
-            Impuestos (IVA 21%):
-            Total:
-        </strong>
-    </div>
-    <div class="col-xs-2">
-        <strong>
-            000
-            000
-            000
-        </strong>
-    </div>
-</div>
-<pre></pre>
-<pre><div class="row">
-<div class="col-xs-5">
-<div class="panel panel-info">
-<div class="panel-heading">
-<h4>Datos bancarios</h4>
-            </div>
-<div class="panel-body">
-                Su nombre
-                Nombre del banco
-                Número de cuenta: 12345678
-            </div>
-        </div>
-    </div>        </ div>
-<div class="col-xs-7">
-<div class="span7">
-<div class="panel panel-info">
-<div class="panel-heading">
-<h4> Datos de contacto </h4>
-<div class=" panel-body ">
-                        Email: usted@ejemplo.com
-                        Móvil: +92123456789
-                        Twitter: <a href="https://twitter.com/suTwitter"></a> |Suweb: <a href="http://www.suweb.com/author/usted"> dilglgllardos </a>
-<h4><small> El pago debe ser por transferencia bancaria </h4>
+    <div class="row">
+        <div class="col-xs-5">
+            <div class="well well-sm">
+                <div class="form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            CONSUMIDOR FINAL
+                        </label>
                     </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            RUC/CEDULA
+                        </label>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+
+        <div class="">
+
+
+            <form class="form-horizontal" method="post">
+                <fieldset>
+                    <div>
+                        <div>
+                            <input placeholder="Cedula" />
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-primary btn-lg">Buscar cliente</button>
+                        </div>
+
+
+
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <hr />
+    <div class="container">
+        <div class="row">
+            <div class="row mb-3">
+                <div class="col-8">
+                    <h1><small>DATOS CLIENTE</small></h1>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <input placeholder="Cedula/Ruc" disabled />
+
+                </div>
+                <div class="col">
+                    <input placeholder="Nombre" disabled />
+
+                </div>
+                <div class="col">
+                    <input placeholder="Apellido" disabled />
+                </div>
+                <div class="col">
+                    <input placeholder="Direccion" disabled />
+                </div>
+                <div class="col-3">
+                    <input placeholder="Telefono" disabled />
                 </div>
             </div>
         </div>
-</div>
+        <hr />
+
+
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-8">
+                    <h1><small>PRODUCTOS</small></h1>
+                </div>
+            </div>
+
+            <div class="">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#EjemploModal">AGREGAR PRODUCTOS</button>
+            </div>
+            <div>
+                <div class="modal fade" id="EjemploModal" tabindex="-1" role="dialog" aria-labelledby="EjemploModalLabel" aria-hidden="true">
+
+
+
+
+
+
+                    <div class="modal-dialog modal-lg" >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="EjemploModalLabel">PRODUCTOS</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="">
+
+
+                                    <form class="form-horizontal" method="post">
+                                        <fieldset>
+                                            <div>
+                                                <div>
+                                                    <input placeholder="Producto" />
+                                                </div>
+
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary btn-lg">Buscar Producto</button>
+                                                </div>
+
+
+
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <hr />
+                                <div class="row my-5">
+                                    <table class="table table-borderless factura">
+                                        <thead>
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>cantidad</th>
+                                                <th>Agregar</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input placeholder="Nombre" />
+                                                </td>
+                                                <td> <input placeholder="Precio" /></td>
+                                                <td>
+                                                    <input placeholder="Cantidad" />
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-secondary">AGREGAR</button>
+                                                </td>
+
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <hr />
+
+        <div class="row my-5">
+            <table class="table table-borderless factura">
+                <thead>
+                    <tr>
+                        <th>Cant.</th>
+                        <th>Descripcion</th>
+                        <th>Precio Unitario</th>
+                        <th>Subtotal</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input placeholder="CANTIDAD" />
+                        </td>
+                        <td> <input placeholder="DESCRIPCION" /></td>
+                        <td>
+                            <input placeholder="PRECIO" />
+                        </td>
+                        <td>
+                            <input placeholder="SUBTOTAL" />
+                        </td>
+
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Total</th>
+                        <th>1.00$$</th>
+                        
+
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+    </div>
+
+
